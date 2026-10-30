@@ -395,7 +395,6 @@ end
 function goodbye()
     gg.setVisible(false)
     gg.alert("====================================\n       HANZZ_TSC SCRIPT v2.0\n====================================\n Terima kasih sudah menggunakan\n script ini. Sampai jumpa!")
-    os.exit()
 end
 
 function pilihMemory()
