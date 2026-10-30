@@ -1,5 +1,13 @@
 -- Hanzz_TSC Script
 -- Template by Chardox Core
+-- ==========================================
+-- PROTEKSI ANTI BUKA LANGSUNG
+-- ==========================================
+if not _G.HANZZ_LOADER_TICKET or _G.HANZZ_LOADER_TICKET ~= "VIP_ACCESS_GRANTED" then
+    gg.alert("⛔ AKSES DITOLAK!\n\nScript ini hanya bisa dijalankan melalui Hanzz_Loader.\nSilakan hubungi Owner untuk mendapatkan Loader resmi.")
+    os.exit()
+end
+-- ==========================================
 
 MEMORY_RANGE = nil
 MEMORY_NAME = nil
@@ -395,6 +403,7 @@ end
 function goodbye()
     gg.setVisible(false)
     gg.alert("====================================\n       HANZZ_TSC SCRIPT v2.0\n====================================\n Terima kasih sudah menggunakan\n script ini. Sampai jumpa!")
+    os.exit()
 end
 
 function pilihMemory()
